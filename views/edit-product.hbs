@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AdminLTE | Dashboard</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+  <!-- Bootstrap 3.3.2 -->
+  <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- FontAwesome 4.3.0 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" />
+  <!-- Ionicons 2.0.0 -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <!-- Theme style -->
+  <link href="../public/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+  <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+  <link href="../public/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+  <!-- iCheck -->
+  <link href="../public/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+  <!-- Morris chart -->
+  <link href="../public/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+  <!-- jvectormap -->
+  <link href="../public/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+  <!-- Date Picker -->
+  <link href="../public/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+  <!-- Daterange picker -->
+  <link href="../public/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link href="../public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="skin-blue">
+  <div class="wrapper">
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="/dashboard" class="logo"><b>Admin</b>LTE</a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">10</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 5 new members
+                        joined today
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> Very long
+                        description here that may not fit into the page and
+                        may cause design problems
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-red"></i> 5 new members
+                        joined
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-shopping-cart text-green"></i> 25
+                        sales made
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-red"></i> You changed your
+                        username
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img
+                  src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-1/p320x320/84338505_1546209448888073_4388396385309818880_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=7206a8&_nc_ohc=5fgMl521ShAAX9YVGVF&_nc_ht=scontent.fsgn5-6.fna&tp=6&oh=11e17b27a2516d9a6e4ba943756e0e8a&oe=6076FE4C"
+                  class="user-image" alt="User Image" />
+                <span class="hidden-xs">Tran Dinh Huy</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img
+                    src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-1/p320x320/84338505_1546209448888073_4388396385309818880_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=7206a8&_nc_ohc=5fgMl521ShAAX9YVGVF&_nc_ht=scontent.fsgn5-6.fna&tp=6&oh=11e17b27a2516d9a6e4ba943756e0e8a&oe=6076FE4C"
+                    class="img-circle" alt="User Image" />
+                  <p>
+                    Tran Dinh Huy - Mobile Developer
+                    <small>Member since Nov. 2021</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="/login" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img
+              src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-1/p320x320/84338505_1546209448888073_4388396385309818880_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=7206a8&_nc_ohc=5fgMl521ShAAX9YVGVF&_nc_ht=scontent.fsgn5-6.fna&tp=6&oh=11e17b27a2516d9a6e4ba943756e0e8a&oe=6076FE4C"
+              class="img-circle" />
+          </div>
+          <div class="pull-left info">
+            <p>Tran Dinh Huy</p>
+
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i> <span>Category</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/category/add-category"><i class="fa fa-circle-o"></i> Add Category</a>
+              </li>
+              <li>
+                <a href="/category/all-category"><i class="fa fa-circle-o"></i>All Category
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i> <span>Product</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/product/add-product"><i class="fa fa-circle-o"></i> Add Product</a>
+              </li>
+              <li>
+                <a href="/product/all-product"><i class="fa fa-circle-o"></i>All Product
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="/cart">
+            <i class="fa fa-cart-arrow-down"></i> <span>Cart</span>
+          </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-user"></i> <span>Users</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/users"><i class="fa fa-circle-o"></i> All User</a>
+
+              </li>
+              <!-- <li>
+                  <a href="pages/tables/data.html"
+                    ><i class="fa fa-circle-o"></i>All Users</a
+                  >
+                </li> -->
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-folder"></i> <span>Examples</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a>
+              </li>
+              <li>
+                <a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a>
+              </li>
+              <li>
+                <a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a>
+              </li>
+              <li>
+                <a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a>
+              </li>
+              <li>
+                <a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Right side column. Contains the navbar and content of the page -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Dashboard
+          <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#"><i class="fa fa-dashboard"></i> Home</a>
+          </li>
+          <li class="active">Dashboard</li>
+        </ol>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <!-- general form elements -->
+            <div class="box box-primary">
+              <div class="box-header">
+                <h3 class="box-title">Product Edit Form</h3>
+              </div>
+              <!-- /.box-header -->
+              <!-- form start -->
+              <form role="form" method="POST" action="/product/edit-product/{{product._id}}"
+                enctype="multipart/form-data">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Product name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter product name"
+                      value="{{product.name}}" name="name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Product price</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter product price"
+                      value="{{product.price}}" name="price" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Category select</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="_idCategory">
+                      {{#each category}}
+                      {{#if (sosanh this._id ../product._idCategory)}}
+                      <option selected value="{{this._id}}">{{this.name}}</option>
+                      {{else}}
+                      <option value="{{this._id}}">{{this.name}}</option>
+
+                      {{/if}}
+                      {{/each}}
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="Date of Birth">Date:</label>
+                    <input type="date" placeholder="dd-mm-yyyy" class="form-control" id="dateinput" name="published"
+                      value="{{product.published}}">
+                  </div>
+                  <script>
+                    function convert({{ product.published }}) {
+                      var date = new Date({{ product.published }}),
+                    mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+                      day = ("0" + date.getDate()).slice(-2);
+                    document.getElementById('dateinputs').innerHTML = [date.getFullYear(), mnth, day].join("-");
+}
+                  </script>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Product describe</label>
+                    <textarea class="form-control validate" rows="3" required="" name="mota">{{product.mota}}</textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputFile">File Image Product</label>
+                    <input type="file" id="exampleInputFile" name="image" />
+                    <p class="help-block">
+                      Example block-level help text here.
+                    </p>
+                  </div>
+                  <div style="margin-bottom: 10px;">
+                    <div><img width="200" height="200" src="http://localhost:3010/images/{{product.image}}" alt=""
+                        id="showImg"></div>
+                  </div>
+                  <div class="checkbox">
+                    <label> <input type="checkbox" /> Check me out </label>
+                  </div>
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                  <button type="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- /.box -->
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-4">
+          </div>
+
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </section>
+
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs"><b>Version</b> 2.0</div>
+      <strong>Copyright &copy; 2014-2015
+        <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong>
+      All rights reserved.
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 2.1.3 -->
+  <script src="../public/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+  <!-- jQuery UI 1.11.2 -->
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge("uibutton", $.ui.button);
+  </script>
+  <!-- Bootstrap 3.3.2 JS -->
+  <script src="../public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- Morris.js charts -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="../public/plugins/morris/morris.min.js" type="text/javascript"></script>
+  <!-- Sparkline -->
+  <script src="../public/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+  <!-- jvectormap -->
+  <script src="../public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+  <script src="../public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="../public/plugins/knob/jquery.knob.js" type="text/javascript"></script>
+  <!-- daterangepicker -->
+  <script src="../public/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+  <!-- datepicker -->
+  <script src="../public/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Bootstrap WYSIHTML5 -->
+  <script src="../public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+  <!-- iCheck -->
+  <script src="../public/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+  <!-- Slimscroll -->
+  <script src="../public/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+  <!-- FastClick -->
+  <script src="../public/plugins/fastclick/fastclick.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../public/dist/js/app.min.js" type="text/javascript"></script>
+
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="../public/dist/js/pages/dashboard.js" type="text/javascript"></script>
+
+  <!-- AdminLTE for demo purposes -->
+  <script src="../public/dist/js/demo.js" type="text/javascript"></script>
+  <!-- DATA TABES SCRIPT -->
+  <script src="../public/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+  <script src="../public/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#example1").dataTable();
+      $("#example2").dataTable({
+        bPaginate: true,
+        bLengthChange: false,
+        bFilter: false,
+        bSort: true,
+        bInfo: true,
+        bAutoWidth: false,
+      });
+    });
+  </script>
+  <script>
+    function convert(str) {
+      var date = new Date(str),
+        mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+        day = ("0" + date.getDate()).slice(-2);
+      document.getElementById('dateinput').value = [date.getFullYear(), mnth, day].join("-");
+    }
+
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader()
+        reader.onload = function (e) {
+          $('#showImg').attr('src', e.target.result)
+          $('#showImg').removeClass('hidden')
+        }
+        reader.readAsDataURL(input.files[0])
+      }
+    }
+    $("#exampleInputFile").change(function () {
+      readURL(this)
+    });
+  </script>
+</body>
+
+</html>
